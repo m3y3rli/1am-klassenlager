@@ -60,3 +60,24 @@ main {
   background-color: rgba(255, 255, 255, 0.39);
 }
 
+#photo-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+#photo-grid img {
+  width: 100%;
+  border: 2px solid black;
+  transition: transform 600ms ease-in-out;
+}
+
+#photo-grid img:hover {
+  transform: scale(2);
+}
+#photo-grid img:hover:nth-child(3n + 1) {
+  transform: scale(2) translateX(25%);
+}
+#photo-grid img:hover:nth-child(3n) {
+  transform: scale(2) translateX(-25%);
+}
