@@ -60,6 +60,10 @@ main {
   background-color: rgba(255, 255, 255, 0.39);
 }
 
+main h2 {
+  text-align: center;
+}
+
 #photo-grid {
   display: grid;
   grid-template-columns: auto auto auto;
