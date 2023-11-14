@@ -86,6 +86,19 @@ main h2 {
   transform: scale(2) translateX(-25%);
 }
 
+#section { 
+  justify-content: center;
+
+}
+
+mark {
+  background-color: rgba(91, 212, 223, 0.4);
+  font-size: medium;
+  padding: 2px 10px;
+  border-radius: 0.5em;
+}
+
+
 details {
   width: 80%;
   margin: 0 auto ;
@@ -130,3 +143,4 @@ details > ul {
   padding-bottom: 1rem;
   margin-bottom: 0;
 }
+
