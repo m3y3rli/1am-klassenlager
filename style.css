@@ -57,12 +57,34 @@ main {
   width: clamp(620px, 80%, 1080px);
   padding: 20px;
   min-height: 80vh;
-  background-color: rgba(255, 255, 255, 0.39);
-  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.63);
 }
 
 main h2 {
   text-align: center;
+}
+
+.article {
+  margin-top: 10em;
+}
+
+.center {
+  text-align: center;
+  text-decoration: none;
+}
+
+figure {
+  background-color: rgb(176, 174, 171);
+  width: 50%;
+  height: auto;
+
+  padding: 1em 1em 1em 1em;
+  border: 2px solid black;
+}  
+
+figure img {
+  width: 100%;
+  height: auto;
 }
 
 #photo-grid {
