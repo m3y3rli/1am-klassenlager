@@ -16,6 +16,8 @@ body {
   background-color: lightgray;
   font-family: sans-serif;
   margin-top: 80px;
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color:lightblue;
+  background-color: rgba(199,236,254,255);
   padding: 0 20px;
 }
 
@@ -57,11 +59,34 @@ main {
   width: clamp(620px, 80%, 1080px);
   padding: 20px;
   min-height: 80vh;
-  background-color: rgba(255, 255, 255, 0.39);
+  background-color: rgba(255, 255, 255, 0.63);
 }
 
 main h2 {
   text-align: center;
+}
+
+.article {
+  margin-top: 10em;
+}
+
+.center {
+  text-align: center;
+  text-decoration: none;
+}
+
+figure {
+  background-color: rgb(176, 174, 171);
+  width: 50%;
+  height: auto;
+
+  padding: 1em 1em 1em 1em;
+  border: 2px solid black;
+}  
+
+figure img {
+  width: 100%;
+  height: auto;
 }
 
 #photo-grid {
@@ -85,3 +110,72 @@ main h2 {
 #photo-grid img:hover:nth-child(3n) {
   transform: scale(2) translateX(-25%);
 }
+
+#section { 
+  justify-content: center;
+
+}
+
+mark {
+  background-color: rgba(91, 212, 223, 0.4);
+  padding: 0px 8px;
+  border-radius: 0.5em;
+  border: 2px solid rgba(91, 212, 223, 0.0);
+}
+
+mark:hover {
+  border: 2px solid rgba(91, 212, 223, 0.8);
+  padding: 0px 8px;
+  transition: border 0.4s ease-in-out;
+}
+
+
+details {
+  width: 80%;
+  margin: 0 auto ;
+  margin-bottom: .5rem;
+  box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+details[open] {
+  box-shadow: none;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #000000;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
